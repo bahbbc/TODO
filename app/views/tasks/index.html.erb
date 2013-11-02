@@ -1,0 +1,16 @@
+<h1>My tasks</h1>
+<td><%= link_to 'Add', new_task_path %></td>
+
+<table>
+  <% @tasks.each do |task| %>
+    <tr>
+		</script>
+	  <td id="check"><a href="" onclick="task.style.textDecoration='line-through'"><%=image_tag "check.png"%></a></td>	
+  	  <td id="task"><%= task.title %></td>		
+	  <td><%= link_to (image_tag "delete.png"), task_path(task),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+	
+<% end %>
+</table>
+<td><%= pluralize(@tasks.count, "") %> items left</td>

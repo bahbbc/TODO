@@ -1,0 +1,44 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #E8E8E8;
+  color: #858585;
+  font-family: sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+h1{
+	font-size: 51px;
+	text-align: center;
+}
+
+table{
+	border-collapse: collapse;
+	border: solid;
+}
+
+#task{
+	width: 520px;
+	border-bottom: dotted;
+}
+
+#check{
+	border-right: double red;
+	width: 30px;
+}
+
+#mark{
+	text-decoration: line-through;
+	border-right: double red;
+	width: 30px;
+}
+
+a {
+  color: #000;
+}
+
+
+
